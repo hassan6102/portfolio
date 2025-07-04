@@ -6,6 +6,7 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
+  overflow-x: hidden;
 }
 
 body:before {
@@ -35,6 +36,7 @@ body.offcanvas:before {
 
 body, .unslate_co--site-inner {
   background: #000;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
