@@ -75,24 +75,7 @@ a:hover {
   }
 }
 
-.unslate_co--footer {
-  position: fixed !important;
-  width: 100%;
-  background-color: #191919;
-  color: #fff;
-  left: 0;
-  right: 0;
-  bottom: 0px;
-  z-index: -1;
-  height: 400px;
-}
 
-@media (max-width: 991.98px) {
-  .unslate_co--footer {
-    height: auto !important;
-    position: relative !important;
-  }
-}
 
 .btn {
   font-size: 11px;
@@ -1885,132 +1868,61 @@ figure.dotted-bg:before {
   color: #fff;
 }
 
+
+/* تنسيق الـ Footer العام */
 .unslate_co--footer {
-  text-align: center;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
+    background-color: #1a1a1a;
+    color: #888888;
+    padding: 60px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-top: 1px solid #2a2a2a;
 }
 
-.unslate_co--footer a {
-  color: rgba(255, 255, 255, 0.6);
+/* تنسيق الشعار (Logo) */
+.footer-site-logo a {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
-.unslate_co--footer a:hover {
-  color: #fff;
+.footer-site-logo a:hover {
+    transform: translateY(-2px);
 }
 
-.unslate_co--footer .footer-site-logo {
-  margin-bottom: 30px;
+.footer-site-logo a span {
+    color: #e50914; /* لون مميز للنقطة، يمكنك تغييره حسب رغبتك مثل #007bff */
 }
 
-.unslate_co--footer .footer-site-logo a {
-  font-size: 30px;
-  font-weight: 900;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
+/* تنسيق نص حقوق الملكية والنصوص المجاورة */
+.site-copyright {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #aaaaaa;
+    margin: 0;
 }
 
-.unslate_co--footer .footer-site-logo a span {
-  color: #D63447;
+/* تنسيق أيقونة القلب */
+.site-copyright .icon-heart {
+    color: #e50914;
+    display: inline-block;
+    margin: 0 4px;
+    animation: heartbeat 1.5s infinite;
 }
 
-.unslate_co--footer .footer-site-social {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.unslate_co--footer .footer-site-social li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: inline-block;
-}
-
-@media (max-width: 991.98px) {
-  .unslate_co--footer .footer-site-social li {
-    display: block;
-  }
-}
-
-.unslate_co--footer .footer-site-social li a {
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.unslate_co--footer .footer-site-social li a:hover,
-.unslate_co--footer .footer-site-social li a:focus {
-  color: #fff;
-}
-
-
-.unslate_co--footer {
-  text-align: center;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.unslate_co--footer a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.unslate_co--footer a:hover {
-  color: #fff;
-}
-
-.unslate_co--footer .footer-site-logo {
-  margin-bottom: 30px;
-}
-
-.unslate_co--footer .footer-site-logo a {
-  font-size: 30px;
-  font-weight: 900;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-}
-
-.unslate_co--footer .footer-site-logo a span {
-  color: #D63447;
-}
-
-.unslate_co--footer .footer-site-social {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.unslate_co--footer .footer-site-social li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: inline-block;
-}
-
-@media (max-width: 991.98px) {
-  .unslate_co--footer .footer-site-social li {
-    display: block;
-  }
-}
-
-.unslate_co--footer .footer-site-social li a {
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.unslate_co--footer .footer-site-social li a:hover, .unslate_co--footer .footer-site-social li a:focus {
-  color: #fff;
+/* تأثير نبض القلب */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
 }
 .loader-portfolio-wrap {
   text-align: center;
